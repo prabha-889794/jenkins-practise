@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo "Building branch: ${env.BRANCH_NAME}"
+                echo "Auto-build triggered by Webhook!: ${env.BRANCH_NAME}"
                 sh 'echo "Hello World" > build.txt'
             }
         }
